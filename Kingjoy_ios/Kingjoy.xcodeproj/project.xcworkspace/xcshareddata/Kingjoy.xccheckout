@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7DDDD0A8-C00C-454A-861D-7F39D6DFD22D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Kingjoy</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>42bdbd8b-7379-2b45-a07a-522ef2c1dd81</key>
+		<string>http://192.168.1.200/svn/KingjoyPlatform</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GamePlatform/KingjoyIOS/Kingjoy/Kingjoy.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>42bdbd8b-7379-2b45-a07a-522ef2c1dd81</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>42bdbd8b-7379-2b45-a07a-522ef2c1dd81</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>42bdbd8b-7379-2b45-a07a-522ef2c1dd81</string>
+			<key>IDESourceControlWCCName</key>
+			<string>KingjoyPlatform</string>
+		</dict>
+	</array>
+</dict>
+</plist>

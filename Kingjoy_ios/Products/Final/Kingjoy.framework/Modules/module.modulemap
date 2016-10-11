@@ -1,0 +1,6 @@
+framework module Kingjoy {
+  umbrella header "Kingjoy.h"
+
+  export *
+  module * { export * }
+}

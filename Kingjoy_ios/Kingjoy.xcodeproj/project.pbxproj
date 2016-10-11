@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1864F2D21AECFBF40009363B /* Aggrigate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1864F2D31AECFBF40009363B /* Build configuration list for PBXAggregateTarget "Aggrigate" */;
+			buildPhases = (
+				1864F2D81AECFC6D0009363B /* ShellScript */,
+			);
+			dependencies = (
+				1864F2D71AECFC620009363B /* PBXTargetDependency */,
+			);
+			name = Aggrigate;
+			productName = Aggrigate;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1864F2C51AECF0370009363B /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1864F2C31AECF0370009363B /* libcrypto.a */; };
+		1864F2C61AECF0370009363B /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1864F2C41AECF0370009363B /* libssl.a */; };
+		187644B81AEC7B8000E80B95 /* Kingjoy.h in Headers */ = {isa = PBXBuildFile; fileRef = 187644B71AEC7B8000E80B95 /* Kingjoy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		187644BE1AEC7B8100E80B95 /* Kingjoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187644B21AEC7B8000E80B95 /* Kingjoy.framework */; };
+		187644C51AEC7B8100E80B95 /* KingjoyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187644C41AEC7B8100E80B95 /* KingjoyTests.m */; };
+		187644EA1AEC7C2700E80B95 /* KingjoyDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 187644D21AEC7C2700E80B95 /* KingjoyDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		187644EB1AEC7C2700E80B95 /* KingjoySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 187644D31AEC7C2700E80B95 /* KingjoySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		187644EC1AEC7C2700E80B95 /* KingjoySDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 187644D51AEC7C2700E80B95 /* KingjoySDK.m */; };
+		187644ED1AEC7C2700E80B95 /* KingjoySetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 187644D61AEC7C2700E80B95 /* KingjoySetting.m */; };
+		187644EE1AEC7C2700E80B95 /* KJUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 187644D71AEC7C2700E80B95 /* KJUserInfo.m */; };
+		187644F31AEC7C2700E80B95 /* JoinDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 187644DF1AEC7C2700E80B95 /* JoinDialog.h */; };
+		187644F41AEC7C2700E80B95 /* JoinDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 187644E01AEC7C2700E80B95 /* JoinDialog.m */; };
+		187644F51AEC7C2700E80B95 /* LoginDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 187644E11AEC7C2700E80B95 /* LoginDialog.h */; };
+		187644F61AEC7C2700E80B95 /* LoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 187644E21AEC7C2700E80B95 /* LoginDialog.m */; };
+		187644F91AEC7C2700E80B95 /* WebViewJsBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 187644E51AEC7C2700E80B95 /* WebViewJsBridge.h */; };
+		187644FA1AEC7C2700E80B95 /* WebViewJsBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 187644E61AEC7C2700E80B95 /* WebViewJsBridge.m */; };
+		187644FB1AEC7C2700E80B95 /* WebViewJsCaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 187644E71AEC7C2700E80B95 /* WebViewJsCaller.h */; };
+		187644FC1AEC7C2700E80B95 /* WebViewJsCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 187644E81AEC7C2700E80B95 /* WebViewJsCaller.m */; };
+		187644FD1AEC7C2700E80B95 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 187644E91AEC7C2700E80B95 /* PrefixHeader.pch */; };
+		187647001AEC8C9000E80B95 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187646FF1AEC8C9000E80B95 /* SystemConfiguration.framework */; };
+		18903B9C1B2144D100C7155F /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18903B9B1B2144D100C7155F /* libsqlite3.0.dylib */; };
+		18903B9D1B2144D800C7155F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 187646ED1AEC8C2700E80B95 /* libz.dylib */; };
+		189C11E91AEF696700C345C4 /* KingjoySetting.h in Headers */ = {isa = PBXBuildFile; fileRef = 189C11E81AEF696700C345C4 /* KingjoySetting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		189C11F11AEF69A300C345C4 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 189C11ED1AEF69A300C345C4 /* MBProgressHUD.h */; };
+		189C11F21AEF69A300C345C4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C11EE1AEF69A300C345C4 /* MBProgressHUD.m */; };
+		189C11F61AEF847500C345C4 /* DataHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 189C11F41AEF847500C345C4 /* DataHolder.h */; };
+		189C11F71AEF847500C345C4 /* DataHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C11F51AEF847500C345C4 /* DataHolder.m */; };
+		189C11FA1AEF96A700C345C4 /* SelectDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 189C11F81AEF96A600C345C4 /* SelectDialog.h */; };
+		189C11FB1AEF96A700C345C4 /* SelectDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C11F91AEF96A600C345C4 /* SelectDialog.m */; };
+		18A276ED1CB7B4C10015438E /* IOSDevicesInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A276EB1CB7B4C10015438E /* IOSDevicesInfo.h */; };
+		18A276EE1CB7B4C10015438E /* IOSDevicesInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18A276EC1CB7B4C10015438E /* IOSDevicesInfo.mm */; };
+		18A276F91CB7BE4D0015438E /* HttpUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A276F71CB7BE4D0015438E /* HttpUtil.h */; };
+		18A276FA1CB7BE4D0015438E /* HttpUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A276F81CB7BE4D0015438E /* HttpUtil.m */; };
+		18A276FB1CB7DFBF0015438E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187646FD1AEC8C8100E80B95 /* AdSupport.framework */; };
+		18A2770A1CB9006D0015438E /* ReadMe.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A277081CB9006D0015438E /* ReadMe.h */; };
+		18A2770B1CB9006D0015438E /* ReadMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A277091CB9006D0015438E /* ReadMe.m */; };
+		18BBA4831AF0AD8200B26BC8 /* WebViewJsSuper.h in Headers */ = {isa = PBXBuildFile; fileRef = 18BBA4811AF0AD8200B26BC8 /* WebViewJsSuper.h */; };
+		18BBA4861AF0B83E00B26BC8 /* WebViewJsSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA4851AF0B83E00B26BC8 /* WebViewJsSuper.m */; };
+		18BBA4881AF0CB8F00B26BC8 /* kingjoy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18BBA4871AF0CB8F00B26BC8 /* kingjoy.bundle */; };
+		18F5F68D1B4A60AF00EFACE1 /* FloatView.h in Headers */ = {isa = PBXBuildFile; fileRef = 18F5F68B1B4A60AF00EFACE1 /* FloatView.h */; };
+		18F5F68E1B4A60AF00EFACE1 /* FloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5F68C1B4A60AF00EFACE1 /* FloatView.m */; };
+		18F5F6A21B4AA01700EFACE1 /* BindEmailDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 18F5F6A01B4AA01700EFACE1 /* BindEmailDialog.h */; };
+		18F5F6A31B4AA01700EFACE1 /* BindEmailDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5F6A11B4AA01700EFACE1 /* BindEmailDialog.m */; };
+		18F5F6A61B4AAAF000EFACE1 /* ForgetPswDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 18F5F6A41B4AAAF000EFACE1 /* ForgetPswDialog.h */; };
+		18F5F6A71B4AAAF000EFACE1 /* ForgetPswDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5F6A51B4AAAF000EFACE1 /* ForgetPswDialog.m */; };
+		18F5F6AA1B4AABE300EFACE1 /* FloatMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 18F5F6A81B4AABE300EFACE1 /* FloatMenu.h */; };
+		18F5F6AB1B4AABE300EFACE1 /* FloatMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5F6A91B4AABE300EFACE1 /* FloatMenu.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		188D86AE1AF72EE5001D8BE8 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		1864F2D61AECFC620009363B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187644A91AEC7B8000E80B95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 187644B11AEC7B8000E80B95;
+			remoteInfo = Kingjoy;
+		};
+		187644BF1AEC7B8100E80B95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187644A91AEC7B8000E80B95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 187644B11AEC7B8000E80B95;
+			remoteInfo = Kingjoy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1864F2C31AECF0370009363B /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = lib/libcrypto.a; sourceTree = "<group>"; };
+		1864F2C41AECF0370009363B /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = lib/libssl.a; sourceTree = "<group>"; };
+		187644B21AEC7B8000E80B95 /* Kingjoy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kingjoy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		187644B61AEC7B8000E80B95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187644B71AEC7B8000E80B95 /* Kingjoy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kingjoy.h; sourceTree = "<group>"; };
+		187644BD1AEC7B8100E80B95 /* KingjoyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingjoyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		187644C31AEC7B8100E80B95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187644C41AEC7B8100E80B95 /* KingjoyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KingjoyTests.m; sourceTree = "<group>"; };
+		187644D21AEC7C2700E80B95 /* KingjoyDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KingjoyDefines.h; sourceTree = "<group>"; };
+		187644D31AEC7C2700E80B95 /* KingjoySDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KingjoySDK.h; sourceTree = "<group>"; };
+		187644D51AEC7C2700E80B95 /* KingjoySDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KingjoySDK.m; sourceTree = "<group>"; };
+		187644D61AEC7C2700E80B95 /* KingjoySetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KingjoySetting.m; sourceTree = "<group>"; };
+		187644D71AEC7C2700E80B95 /* KJUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJUserInfo.m; sourceTree = "<group>"; };
+		187644DF1AEC7C2700E80B95 /* JoinDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinDialog.h; sourceTree = "<group>"; };
+		187644E01AEC7C2700E80B95 /* JoinDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoinDialog.m; sourceTree = "<group>"; };
+		187644E11AEC7C2700E80B95 /* LoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginDialog.h; sourceTree = "<group>"; };
+		187644E21AEC7C2700E80B95 /* LoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginDialog.m; sourceTree = "<group>"; };
+		187644E51AEC7C2700E80B95 /* WebViewJsBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJsBridge.h; sourceTree = "<group>"; };
+		187644E61AEC7C2700E80B95 /* WebViewJsBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJsBridge.m; sourceTree = "<group>"; };
+		187644E71AEC7C2700E80B95 /* WebViewJsCaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJsCaller.h; sourceTree = "<group>"; };
+		187644E81AEC7C2700E80B95 /* WebViewJsCaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJsCaller.m; sourceTree = "<group>"; };
+		187644E91AEC7C2700E80B95 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		187646ED1AEC8C2700E80B95 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		187646EF1AEC8C3500E80B95 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		187646F11AEC8C3E00E80B95 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		187646F31AEC8C4F00E80B95 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		187646F51AEC8C5A00E80B95 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		187646F71AEC8C6400E80B95 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		187646F91AEC8C6E00E80B95 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		187646FB1AEC8C7700E80B95 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		187646FD1AEC8C8100E80B95 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		187646FF1AEC8C9000E80B95 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		187647011AEC8CCB00E80B95 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		187647031AEC8CE400E80B95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		187647051AEC8CF100E80B95 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18903B9B1B2144D100C7155F /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		189C11E81AEF696700C345C4 /* KingjoySetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KingjoySetting.h; sourceTree = "<group>"; };
+		189C11ED1AEF69A300C345C4 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		189C11EE1AEF69A300C345C4 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		189C11F41AEF847500C345C4 /* DataHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHolder.h; sourceTree = "<group>"; };
+		189C11F51AEF847500C345C4 /* DataHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHolder.m; sourceTree = "<group>"; };
+		189C11F81AEF96A600C345C4 /* SelectDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectDialog.h; sourceTree = "<group>"; };
+		189C11F91AEF96A600C345C4 /* SelectDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectDialog.m; sourceTree = "<group>"; };
+		18A276EB1CB7B4C10015438E /* IOSDevicesInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOSDevicesInfo.h; path = device/IOSDevicesInfo.h; sourceTree = "<group>"; };
+		18A276EC1CB7B4C10015438E /* IOSDevicesInfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = IOSDevicesInfo.mm; path = device/IOSDevicesInfo.mm; sourceTree = "<group>"; };
+		18A276F71CB7BE4D0015438E /* HttpUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpUtil.h; path = util/http/HttpUtil.h; sourceTree = "<group>"; };
+		18A276F81CB7BE4D0015438E /* HttpUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpUtil.m; path = util/http/HttpUtil.m; sourceTree = "<group>"; };
+		18A277081CB9006D0015438E /* ReadMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReadMe.h; path = readme/ReadMe.h; sourceTree = "<group>"; };
+		18A277091CB9006D0015438E /* ReadMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReadMe.m; path = readme/ReadMe.m; sourceTree = "<group>"; };
+		18BBA4811AF0AD8200B26BC8 /* WebViewJsSuper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJsSuper.h; sourceTree = "<group>"; };
+		18BBA4851AF0B83E00B26BC8 /* WebViewJsSuper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJsSuper.m; sourceTree = "<group>"; };
+		18BBA4871AF0CB8F00B26BC8 /* kingjoy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = kingjoy.bundle; path = Kingjoy/kingjoy.bundle; sourceTree = "<group>"; };
+		18F5F68B1B4A60AF00EFACE1 /* FloatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatView.h; sourceTree = "<group>"; };
+		18F5F68C1B4A60AF00EFACE1 /* FloatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatView.m; sourceTree = "<group>"; };
+		18F5F6A01B4AA01700EFACE1 /* BindEmailDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindEmailDialog.h; sourceTree = "<group>"; };
+		18F5F6A11B4AA01700EFACE1 /* BindEmailDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindEmailDialog.m; sourceTree = "<group>"; };
+		18F5F6A41B4AAAF000EFACE1 /* ForgetPswDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPswDialog.h; sourceTree = "<group>"; };
+		18F5F6A51B4AAAF000EFACE1 /* ForgetPswDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPswDialog.m; sourceTree = "<group>"; };
+		18F5F6A81B4AABE300EFACE1 /* FloatMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatMenu.h; sourceTree = "<group>"; };
+		18F5F6A91B4AABE300EFACE1 /* FloatMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatMenu.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		187644AE1AEC7B8000E80B95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A276FB1CB7DFBF0015438E /* AdSupport.framework in Frameworks */,
+				18903B9D1B2144D800C7155F /* libz.dylib in Frameworks */,
+				18903B9C1B2144D100C7155F /* libsqlite3.0.dylib in Frameworks */,
+				187647001AEC8C9000E80B95 /* SystemConfiguration.framework in Frameworks */,
+				1864F2C51AECF0370009363B /* libcrypto.a in Frameworks */,
+				1864F2C61AECF0370009363B /* libssl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187644BA1AEC7B8100E80B95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187644BE1AEC7B8100E80B95 /* Kingjoy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		187644A81AEC7B8000E80B95 = {
+			isa = PBXGroup;
+			children = (
+				18903B9B1B2144D100C7155F /* libsqlite3.0.dylib */,
+				18BBA4871AF0CB8F00B26BC8 /* kingjoy.bundle */,
+				1864F2C31AECF0370009363B /* libcrypto.a */,
+				1864F2C41AECF0370009363B /* libssl.a */,
+				187647051AEC8CF100E80B95 /* CoreGraphics.framework */,
+				187647031AEC8CE400E80B95 /* Foundation.framework */,
+				187647011AEC8CCB00E80B95 /* UIKit.framework */,
+				187646FF1AEC8C9000E80B95 /* SystemConfiguration.framework */,
+				187646FD1AEC8C8100E80B95 /* AdSupport.framework */,
+				187646FB1AEC8C7700E80B95 /* MessageUI.framework */,
+				187646F91AEC8C6E00E80B95 /* QuartzCore.framework */,
+				187646F71AEC8C6400E80B95 /* Security.framework */,
+				187646F51AEC8C5A00E80B95 /* CoreText.framework */,
+				187646F31AEC8C4F00E80B95 /* CoreData.framework */,
+				187646F11AEC8C3E00E80B95 /* MobileCoreServices.framework */,
+				187646EF1AEC8C3500E80B95 /* libxml2.dylib */,
+				187646ED1AEC8C2700E80B95 /* libz.dylib */,
+				187646EA1AEC853C00E80B95 /* lib */,
+				187644B41AEC7B8000E80B95 /* Kingjoy */,
+				187644C11AEC7B8100E80B95 /* KingjoyTests */,
+				187644B31AEC7B8000E80B95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		187644B31AEC7B8000E80B95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				187644B21AEC7B8000E80B95 /* Kingjoy.framework */,
+				187644BD1AEC7B8100E80B95 /* KingjoyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		187644B41AEC7B8000E80B95 /* Kingjoy */ = {
+			isa = PBXGroup;
+			children = (
+				187644D11AEC7C2700E80B95 /* Header */,
+				187644D41AEC7C2700E80B95 /* Implements */,
+				187644E91AEC7C2700E80B95 /* PrefixHeader.pch */,
+				187644B71AEC7B8000E80B95 /* Kingjoy.h */,
+				187644B51AEC7B8000E80B95 /* Supporting Files */,
+			);
+			path = Kingjoy;
+			sourceTree = "<group>";
+		};
+		187644B51AEC7B8000E80B95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				187644B61AEC7B8000E80B95 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		187644C11AEC7B8100E80B95 /* KingjoyTests */ = {
+			isa = PBXGroup;
+			children = (
+				187644C41AEC7B8100E80B95 /* KingjoyTests.m */,
+				187644C21AEC7B8100E80B95 /* Supporting Files */,
+			);
+			path = KingjoyTests;
+			sourceTree = "<group>";
+		};
+		187644C21AEC7B8100E80B95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				187644C31AEC7B8100E80B95 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		187644D11AEC7C2700E80B95 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				187644D21AEC7C2700E80B95 /* KingjoyDefines.h */,
+				187644D31AEC7C2700E80B95 /* KingjoySDK.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		187644D41AEC7C2700E80B95 /* Implements */ = {
+			isa = PBXGroup;
+			children = (
+				18A276F51CB7BE340015438E /* util */,
+				18A276E61CB7AB740015438E /* device */,
+				18F5F68A1B4A60AF00EFACE1 /* menu */,
+				189C11EA1AEF69A300C345C4 /* MBProgressHUD-master */,
+				189C11E81AEF696700C345C4 /* KingjoySetting.h */,
+				187644D51AEC7C2700E80B95 /* KingjoySDK.m */,
+				187644D61AEC7C2700E80B95 /* KingjoySetting.m */,
+				187644D71AEC7C2700E80B95 /* KJUserInfo.m */,
+				187644DE1AEC7C2700E80B95 /* WebDialog */,
+				189C11F41AEF847500C345C4 /* DataHolder.h */,
+				189C11F51AEF847500C345C4 /* DataHolder.m */,
+			);
+			path = Implements;
+			sourceTree = "<group>";
+		};
+		187644DE1AEC7C2700E80B95 /* WebDialog */ = {
+			isa = PBXGroup;
+			children = (
+				18A277071CB900400015438E /* readme */,
+				18F5F69F1B4A9FEE00EFACE1 /* user */,
+				187644DF1AEC7C2700E80B95 /* JoinDialog.h */,
+				187644E01AEC7C2700E80B95 /* JoinDialog.m */,
+				187644E11AEC7C2700E80B95 /* LoginDialog.h */,
+				187644E21AEC7C2700E80B95 /* LoginDialog.m */,
+				187644E51AEC7C2700E80B95 /* WebViewJsBridge.h */,
+				187644E61AEC7C2700E80B95 /* WebViewJsBridge.m */,
+				187644E71AEC7C2700E80B95 /* WebViewJsCaller.h */,
+				187644E81AEC7C2700E80B95 /* WebViewJsCaller.m */,
+				189C11F81AEF96A600C345C4 /* SelectDialog.h */,
+				189C11F91AEF96A600C345C4 /* SelectDialog.m */,
+				18BBA4811AF0AD8200B26BC8 /* WebViewJsSuper.h */,
+				18BBA4851AF0B83E00B26BC8 /* WebViewJsSuper.m */,
+			);
+			path = WebDialog;
+			sourceTree = "<group>";
+		};
+		187646EA1AEC853C00E80B95 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		189C11EA1AEF69A300C345C4 /* MBProgressHUD-master */ = {
+			isa = PBXGroup;
+			children = (
+				189C11ED1AEF69A300C345C4 /* MBProgressHUD.h */,
+				189C11EE1AEF69A300C345C4 /* MBProgressHUD.m */,
+			);
+			path = "MBProgressHUD-master";
+			sourceTree = "<group>";
+		};
+		18A276E61CB7AB740015438E /* device */ = {
+			isa = PBXGroup;
+			children = (
+				18A276EB1CB7B4C10015438E /* IOSDevicesInfo.h */,
+				18A276EC1CB7B4C10015438E /* IOSDevicesInfo.mm */,
+			);
+			name = device;
+			sourceTree = "<group>";
+		};
+		18A276F51CB7BE340015438E /* util */ = {
+			isa = PBXGroup;
+			children = (
+				18A276F61CB7BE390015438E /* http */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		18A276F61CB7BE390015438E /* http */ = {
+			isa = PBXGroup;
+			children = (
+				18A276F71CB7BE4D0015438E /* HttpUtil.h */,
+				18A276F81CB7BE4D0015438E /* HttpUtil.m */,
+			);
+			name = http;
+			sourceTree = "<group>";
+		};
+		18A277071CB900400015438E /* readme */ = {
+			isa = PBXGroup;
+			children = (
+				18A277081CB9006D0015438E /* ReadMe.h */,
+				18A277091CB9006D0015438E /* ReadMe.m */,
+			);
+			name = readme;
+			sourceTree = "<group>";
+		};
+		18F5F68A1B4A60AF00EFACE1 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				18F5F68B1B4A60AF00EFACE1 /* FloatView.h */,
+				18F5F68C1B4A60AF00EFACE1 /* FloatView.m */,
+				18F5F6A81B4AABE300EFACE1 /* FloatMenu.h */,
+				18F5F6A91B4AABE300EFACE1 /* FloatMenu.m */,
+			);
+			name = menu;
+			path = Kingjoy/menu;
+			sourceTree = SOURCE_ROOT;
+		};
+		18F5F69F1B4A9FEE00EFACE1 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				18F5F6A01B4AA01700EFACE1 /* BindEmailDialog.h */,
+				18F5F6A11B4AA01700EFACE1 /* BindEmailDialog.m */,
+				18F5F6A41B4AAAF000EFACE1 /* ForgetPswDialog.h */,
+				18F5F6A51B4AAAF000EFACE1 /* ForgetPswDialog.m */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		187644AF1AEC7B8000E80B95 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187644EA1AEC7C2700E80B95 /* KingjoyDefines.h in Headers */,
+				189C11E91AEF696700C345C4 /* KingjoySetting.h in Headers */,
+				187644EB1AEC7C2700E80B95 /* KingjoySDK.h in Headers */,
+				18BBA4831AF0AD8200B26BC8 /* WebViewJsSuper.h in Headers */,
+				189C11FA1AEF96A700C345C4 /* SelectDialog.h in Headers */,
+				18F5F6A21B4AA01700EFACE1 /* BindEmailDialog.h in Headers */,
+				187644FD1AEC7C2700E80B95 /* PrefixHeader.pch in Headers */,
+				189C11F61AEF847500C345C4 /* DataHolder.h in Headers */,
+				187644F31AEC7C2700E80B95 /* JoinDialog.h in Headers */,
+				187644F51AEC7C2700E80B95 /* LoginDialog.h in Headers */,
+				189C11F11AEF69A300C345C4 /* MBProgressHUD.h in Headers */,
+				18F5F68D1B4A60AF00EFACE1 /* FloatView.h in Headers */,
+				187644B81AEC7B8000E80B95 /* Kingjoy.h in Headers */,
+				187644FB1AEC7C2700E80B95 /* WebViewJsCaller.h in Headers */,
+				18A276ED1CB7B4C10015438E /* IOSDevicesInfo.h in Headers */,
+				18F5F6AA1B4AABE300EFACE1 /* FloatMenu.h in Headers */,
+				18A2770A1CB9006D0015438E /* ReadMe.h in Headers */,
+				187644F91AEC7C2700E80B95 /* WebViewJsBridge.h in Headers */,
+				18A276F91CB7BE4D0015438E /* HttpUtil.h in Headers */,
+				18F5F6A61B4AAAF000EFACE1 /* ForgetPswDialog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		187644B11AEC7B8000E80B95 /* Kingjoy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187644C81AEC7B8100E80B95 /* Build configuration list for PBXNativeTarget "Kingjoy" */;
+			buildPhases = (
+				187644AD1AEC7B8000E80B95 /* Sources */,
+				187644AE1AEC7B8000E80B95 /* Frameworks */,
+				187644AF1AEC7B8000E80B95 /* Headers */,
+				187644B01AEC7B8000E80B95 /* Resources */,
+				187644FE1AEC7C6F00E80B95 /* Run Script */,
+			);
+			buildRules = (
+				188D86AE1AF72EE5001D8BE8 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = Kingjoy;
+			productName = Kingjoy;
+			productReference = 187644B21AEC7B8000E80B95 /* Kingjoy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		187644BC1AEC7B8100E80B95 /* KingjoyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187644CB1AEC7B8100E80B95 /* Build configuration list for PBXNativeTarget "KingjoyTests" */;
+			buildPhases = (
+				187644B91AEC7B8100E80B95 /* Sources */,
+				187644BA1AEC7B8100E80B95 /* Frameworks */,
+				187644BB1AEC7B8100E80B95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				187644C01AEC7B8100E80B95 /* PBXTargetDependency */,
+			);
+			name = KingjoyTests;
+			productName = KingjoyTests;
+			productReference = 187644BD1AEC7B8100E80B95 /* KingjoyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		187644A91AEC7B8000E80B95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Kingjoy;
+				TargetAttributes = {
+					1864F2D21AECFBF40009363B = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					187644B11AEC7B8000E80B95 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					187644BC1AEC7B8100E80B95 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 187644AC1AEC7B8000E80B95 /* Build configuration list for PBXProject "Kingjoy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 187644A81AEC7B8000E80B95;
+			productRefGroup = 187644B31AEC7B8000E80B95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				187644B11AEC7B8000E80B95 /* Kingjoy */,
+				187644BC1AEC7B8100E80B95 /* KingjoyTests */,
+				1864F2D21AECFBF40009363B /* Aggrigate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		187644B01AEC7B8000E80B95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BBA4881AF0CB8F00B26BC8 /* kingjoy.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187644BB1AEC7B8100E80B95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1864F2D81AECFC6D0009363B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\nFMK_NAME=${PROJECT_NAME}\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/Final/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# -configuration ${CONFIGURATION}\n# Clean and Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"";
+		};
+		187644FE1AEC7C6F00E80B95 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		187644AD1AEC7B8000E80B95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F5F6AB1B4AABE300EFACE1 /* FloatMenu.m in Sources */,
+				187644FA1AEC7C2700E80B95 /* WebViewJsBridge.m in Sources */,
+				18F5F6A71B4AAAF000EFACE1 /* ForgetPswDialog.m in Sources */,
+				187644FC1AEC7C2700E80B95 /* WebViewJsCaller.m in Sources */,
+				189C11F21AEF69A300C345C4 /* MBProgressHUD.m in Sources */,
+				18A2770B1CB9006D0015438E /* ReadMe.m in Sources */,
+				187644EE1AEC7C2700E80B95 /* KJUserInfo.m in Sources */,
+				187644ED1AEC7C2700E80B95 /* KingjoySetting.m in Sources */,
+				187644F41AEC7C2700E80B95 /* JoinDialog.m in Sources */,
+				187644F61AEC7C2700E80B95 /* LoginDialog.m in Sources */,
+				18F5F6A31B4AA01700EFACE1 /* BindEmailDialog.m in Sources */,
+				18F5F68E1B4A60AF00EFACE1 /* FloatView.m in Sources */,
+				189C11F71AEF847500C345C4 /* DataHolder.m in Sources */,
+				187644EC1AEC7C2700E80B95 /* KingjoySDK.m in Sources */,
+				189C11FB1AEF96A700C345C4 /* SelectDialog.m in Sources */,
+				18A276EE1CB7B4C10015438E /* IOSDevicesInfo.mm in Sources */,
+				18BBA4861AF0B83E00B26BC8 /* WebViewJsSuper.m in Sources */,
+				18A276FA1CB7BE4D0015438E /* HttpUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187644B91AEC7B8100E80B95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187644C51AEC7B8100E80B95 /* KingjoyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1864F2D71AECFC620009363B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 187644B11AEC7B8000E80B95 /* Kingjoy */;
+			targetProxy = 1864F2D61AECFC620009363B /* PBXContainerItemProxy */;
+		};
+		187644C01AEC7B8100E80B95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 187644B11AEC7B8000E80B95 /* Kingjoy */;
+			targetProxy = 187644BF1AEC7B8100E80B95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1864F2D41AECFBF40009363B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1864F2D51AECFBF40009363B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		187644C61AEC7B8100E80B95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		187644C71AEC7B8100E80B95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		187644C91AEC7B8100E80B95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)/lib/weixin",
+					"$(PROJECT_DIR)/lib/unipay/libs",
+				);
+				GCC_PREFIX_HEADER = Kingjoy/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/Kingjoy",
+				);
+				INFOPLIST_FILE = Kingjoy/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)/lib/weixin",
+					"$(PROJECT_DIR)/lib/unipay/libs",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		187644CA1AEC7B8100E80B95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)/lib/weixin",
+					"$(PROJECT_DIR)/lib/unipay/libs",
+				);
+				GCC_PREFIX_HEADER = Kingjoy/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/Kingjoy",
+				);
+				INFOPLIST_FILE = Kingjoy/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)/lib/weixin",
+					"$(PROJECT_DIR)/lib/unipay/libs",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		187644CC1AEC7B8100E80B95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KingjoyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Framework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		187644CD1AEC7B8100E80B95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = KingjoyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Framework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1864F2D31AECFBF40009363B /* Build configuration list for PBXAggregateTarget "Aggrigate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1864F2D41AECFBF40009363B /* Debug */,
+				1864F2D51AECFBF40009363B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187644AC1AEC7B8000E80B95 /* Build configuration list for PBXProject "Kingjoy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187644C61AEC7B8100E80B95 /* Debug */,
+				187644C71AEC7B8100E80B95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187644C81AEC7B8100E80B95 /* Build configuration list for PBXNativeTarget "Kingjoy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187644C91AEC7B8100E80B95 /* Debug */,
+				187644CA1AEC7B8100E80B95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187644CB1AEC7B8100E80B95 /* Build configuration list for PBXNativeTarget "KingjoyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187644CC1AEC7B8100E80B95 /* Debug */,
+				187644CD1AEC7B8100E80B95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 187644A91AEC7B8000E80B95 /* Project object */;
+}

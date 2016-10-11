@@ -1,0 +1,67 @@
+            
+
+1.调用方法
+[KingjoySDK initAppId:@"123" appkey:@"123" channel:@"123"];
+[KingjoySDK login:self];
+
+[KingjoySDK initAppId:@"123" appkey:@"123" channel:@"123"];
+[KingjoySDK pay:10 productName:@"元宝" customInfo:@"{asdfasdf}" gameOrderId:@"23123" delege:self];
+
+2.登录、支付回调
+<KJLoginCallback,KJPayCallback>
+
+-(void)payFinished:(KJ_BUYGOODS_RESULT *)rs{
+    NSLog(@" pay finish ");
+}
+
+- (void)loginFinished:(KJUserInfo * )user{
+    NSLog(@" haha ok ");
+}
+
+4.framework设置
+添加Framework
+kingjoy.framework
+sdk.bundle
+url scheme : 添加alipay kingjoyPay
+url scheme : 添加weixin wxddd995ea7646419f
+
+5.微信回调支持
+需要在UIApplicationDelegate中实现此方法
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    NSLog(@" test handleOpenUrl run ");
+    return  [KingjoySDK handleOpenURL:url];
+}
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    NSLog(@" test handleOpenUrl run ");
+    return  [KingjoySDK handleOpenURL:url ];
+}
+
+
+6.银联横竖屏问题：（后面测试貌似不用加这个方法了）
+有2种方式处理
+方法 1）在有UIApplicationDelege的类中实现此接口,如在UnityAppController.mm文件
+- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+    UIDeviceOrientation deviceOrientation = [[UIDevice currentDevice] orientation];
+    UIInterfaceOrientation statusBarOrientation =[UIApplication sharedApplication].statusBarOrientation;
+    if(deviceOrientation == UIDeviceOrientationPortrait || deviceOrientation == UIDeviceOrientationPortraitUpsideDown){
+        if(statusBarOrientation != UIInterfaceOrientationPortrait ||statusBarOrientation != UIInterfaceOrientationPortraitUpsideDown){
+            return 0;
+        }
+    }
+    // otherwise
+    return UIInterfaceOrientationMaskLandscape;
+}
+方法 2) 在打开支付的UIViewController中,实现此方法
+-(NSUInteger)supportedInterfaceOrientations {
+    UIDeviceOrientation deviceOrientation = [[UIDevice currentDevice] orientation];
+    UIInterfaceOrientation statusBarOrientation =[UIApplication sharedApplication].statusBarOrientation;
+    if(deviceOrientation == UIDeviceOrientationPortrait || deviceOrientation == UIDeviceOrientationPortraitUpsideDown){
+        if(statusBarOrientation != UIInterfaceOrientationPortrait ||statusBarOrientation != UIInterfaceOrientationPortraitUpsideDown){
+            return 0;
+        }
+    }
+    // otherwise
+    return UIInterfaceOrientationMaskLandscape;
+}

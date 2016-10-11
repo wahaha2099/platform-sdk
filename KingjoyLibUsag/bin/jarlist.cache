@@ -1,0 +1,21 @@
+# cache for current jar dependency. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1463981388067 3602 398c7d9fcced3befc2e3279d569fc7c964dcc452 E:\workspace\boxuan\toupiao\KingjoyLibSDK\libs\UPPayAssistEx.jar
+1463981379978 3602 398c7d9fcced3befc2e3279d569fc7c964dcc452 E:\workspace\boxuan\toupiao\KingjoyLibUsag\libs\UPPayAssistEx.jar
+1463981379975 1074044 33b27a8d2a5b87e6eb6c60e87a5374ffbfeacc3a E:\workspace\boxuan\toupiao\KingjoyLibUsag\libs\android-support-v4.jar
+1463981372108 1074044 33b27a8d2a5b87e6eb6c60e87a5374ffbfeacc3a E:\workspace\boxuan\toupiao\KingjoyAlipayLib\libs\android-support-v4.jar
+1463981388016 575389 761ea405b9b37ced573d2df0d1e3a4e0f9edc668 E:\workspace\boxuan\toupiao\KingjoyLibSDK\libs\commons-collections-3.2.1.jar
+1463981377813 575389 761ea405b9b37ced573d2df0d1e3a4e0f9edc668 E:\workspace\boxuan\toupiao\KingjoyLibUsag\libs\commons-collections-3.2.1.jar
+1463981377950 362679 2b36e4adfb66d966c5aef2d73deb6be716389dc9 E:\workspace\boxuan\toupiao\KingjoyLibUsag\libs\commons-configuration-1.10.jar
+1463981388025 362679 2b36e4adfb66d966c5aef2d73deb6be716389dc9 E:\workspace\boxuan\toupiao\KingjoyLibSDK\libs\commons-configuration-1.10.jar
+1463981388020 261809 16313e02a793435009f1e458fa4af5d879f6fb11 E:\workspace\boxuan\toupiao\KingjoyLibSDK\libs\commons-lang-2.4.jar
+1463981377942 261809 16313e02a793435009f1e458fa4af5d879f6fb11 E:\workspace\boxuan\toupiao\KingjoyLibUsag\libs\commons-lang-2.4.jar
+1463981377945 395340 08bae20242c4c7e29adb354fe1ab7c4ecedeb0a2 E:\workspace\boxuan\toupiao\KingjoyLibUsag\libs\pp_payment.jar
+1463981388023 395340 08bae20242c4c7e29adb354fe1ab7c4ecedeb0a2 E:\workspace\boxuan\toupiao\KingjoyLibSDK\libs\pp_payment.jar
+1463981377815 225414 106882c44925f05bc171cff00f073834ccfa7a97 E:\workspace\boxuan\toupiao\KingjoyLibUsag\libs\UPPayPluginEx.jar
+1463981388018 225414 106882c44925f05bc171cff00f073834ccfa7a97 E:\workspace\boxuan\toupiao\KingjoyLibSDK\libs\UPPayPluginEx.jar
+1463981388069 47379 d7c2f29c05b35e8c8713be2b81c41cf18f98b64a E:\workspace\boxuan\toupiao\KingjoyLibSDK\libs\libammsdk.jar
+1463981379980 47379 d7c2f29c05b35e8c8713be2b81c41cf18f98b64a E:\workspace\boxuan\toupiao\KingjoyLibUsag\libs\libammsdk.jar
+1463981388027 104706 11b15d9eae562541ea942271b74ee1083b80f0b3 E:\workspace\boxuan\toupiao\KingjoyLibSDK\libs\alipay.jar
+1463981377968 104706 11b15d9eae562541ea942271b74ee1083b80f0b3 E:\workspace\boxuan\toupiao\KingjoyLibUsag\libs\alipay.jar

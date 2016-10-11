@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/big_window_layout"
+    android:layout_width="125dip"
+    android:layout_height="30dip"
+    android:background="@drawable/bg_big"
+    android:orientation="horizontal" >
+
+    <!--
+        <Button 
+        android:id="@+id/close"
+        android:layout_width="80dip"
+        android:layout_height="25dip"
+        android:layout_gravity="center_horizontal"
+        android:textSize="8dip"
+        android:text="退出"
+        />
+    -->
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#00000000"
+        android:padding="0dp"
+        android:src="@drawable/closebtn" />
+
+    <ImageButton
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:padding="0dp"
+        android:src="@drawable/detailbtn" />
+
+    <ImageButton
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:padding="0dp"
+        android:src="@drawable/passbtn" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:padding="0dp"
+        android:src="@drawable/backbtn" />
+
+    <!--
+    <Button 
+        android:id="@+id/detail"
+        android:layout_width="80dip"
+        android:layout_height="25dip"
+        android:layout_gravity="center_horizontal"
+        android:textSize="8dip"
+        android:text="详细资料"
+        />
+      <Button 
+        android:id="@+id/password"
+        android:layout_width="80dip"
+        android:layout_height="25dip"
+        android:layout_gravity="center_horizontal"
+        android:textSize="8dip"
+        android:text="修改密码"
+        />
+    <Button 
+        android:id="@+id/back"
+        android:layout_width="80dip"
+        android:layout_height="25dip"
+        android:layout_gravity="center_horizontal"
+        android:textSize="8dip"
+        android:text="返回"
+        />
+    -->
+
+</LinearLayout>
